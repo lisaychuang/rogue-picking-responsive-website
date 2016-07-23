@@ -1,32 +1,186 @@
-body {max-width: 1200px; margin: 0 auto; font-family: Montserrat, Helvetica, Arial, sans-serif;}
-h1, h3, h4 {text-transform: uppercase; font-size: 21px;}
-h1 {color: black; font-size: 30px; text-align: left; width: auto; float: left; padding: 15px 0;}
-h3 {color: black; font-size: 18px; text-align: center; padding: 15px;}
-h4 {color: black; font-size: 12px;}
-.main-title h3 {text-align: left; padding: 5px 0px; text-transform: uppercase; color:#77a466; }
-p {padding: 0px 30px; line-height: 21px; font-size: 14px;}
+/* BASE COAT */
 
-/*The widths are in a percentage!*/
-header {width: 100%; height: 110px; border-bottom:3px solid #77a466; margin: 0 auto;}
-header span {color: #77a466;}
-header nav {float: right; padding: 45px 0px;}
-header nav a {text-decoration: none; text-transform: uppercase; font-weight: bold; font-size: 14px; padding: 0 10px; color:#77a466;}
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+}
+h1,
+h3,
+h4 {
+    text-transform: uppercase;
+    font-size: 21px;
+}
+h1 {
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    width: auto;
+    float: left;
+    padding: 15px 0;
+}
+h3 {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+h4 {
+    color: black;
+    font-size: 12px;
+}
+p {
+    padding: 0px 30px;
+    line-height: 21px;
+    font-size: 14px;
+}
 
-/*The widths are in a percentage!*/
-.top-section, .bottom-section {width: 100%; margin: 0 auto; clear: both;}
-.main-image {width: 100%; height: auto; float: left;}
-.main-image img {width: 100%; border-bottom:3px solid #77a466;}
-.main-title {width: 100%; height: auto; float: left;}
-.main-title p {padding: 0px; line-height: 25px; font-size: 16px;}
-.section-one, .section-two, .section-three {width: 33%; height: auto; float: left; border-top: 1px solid #eee;}
-.section-one, .section-two {border-right: 1px solid #eee;}
-.section-one h4 {padding: 10px 0px;}
-.section-two h4, .section-three h4 {padding: 10px 30px;}
-.menu {list-style: none; padding: 0px;}
-.menu li {padding: 10px 0; color:#77a466;}
-.reviews {color: #333; line-height: 21px; font-size: 16px;}
-.address {font-size: 16px; line-height: 24px;}
+/* --HEADER-- */
 
-/*The widths are in a percentage!*/
-footer {width: 100%; height: 50px; border-top:3px solid #eee; margin: 0 auto; clear: both; text-align: center;}
-footer span {font-family: "Wisdom Script", script; text-transform: lowercase; color: #77a466; font-size: 14px;}
+header {
+    width: 100%;
+    height: 110px;
+    border-bottom: 3px solid #77a466;
+    margin: 0 auto;
+}
+header span {
+    color: #77a466;
+}
+header nav {
+    float: right;
+    padding: 45px 0px;
+}
+header nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 10px;
+    color: #77a466;
+}
+
+/* --TOP-- */
+.top-section .main-title h3 {
+    text-align: left;
+    padding: 5px 0px;
+    text-transform: uppercase;
+    color: #77a466;
+}
+.top-section,
+.bottom-section {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+}
+.top-section .main-image {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.top-section .main-image img {
+    width: 100%;
+    border-bottom: 3px solid #77a466;
+}
+.top-section .main-title {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.top-section .main-title p {
+    padding: 0px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.subsection {
+    width: 33%;
+    height: auto;
+    float: left;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+.subsection:last-child {
+	border-right: none;
+}
+
+.subsection h4 {
+	padding: 10px 30px;
+}
+
+.subsection:first-child h4 {
+	padding: 10px 0px;
+}
+
+.subsection .menu {
+    list-style: none;
+    padding: 0px;
+}
+.subsection .menu li {
+    padding: 10px 0;
+    color: #77a466;
+}
+.subsection .reviews {
+    color: #333;
+    line-height: 21px;
+    font-size: 16px;
+}
+.subsection .address {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    border-top: 3px solid #eee;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+}
+footer span {
+    font-family: "Wisdom Script", script;
+    text-transform: lowercase;
+    color: #77a466;
+    font-size: 14px;
+}
+
+/* Tablet Landscape */
+@media only screen and (max-width: 768px) {
+	header h1 {
+		text-align: center;
+		width: 100%;
+		padding: 5px 0;
+	}
+
+	header {
+		height: 88px;
+	}
+	header nav {
+		width: 100%;
+		padding: 20px 0;
+	}
+	header nav > a {
+		display: block;
+		text-align: center;
+		padding: 6px 0;
+
+	}
+}
+
+/* Phone */
+@media only screen and (max-width: 500px) {
+	
+	.subsection {
+		width: 100%;
+	}
+	.subsection .menu {
+		padding-left: 30px;
+	}
+	.subsection:first-child h4 {
+		padding: 10px 30px;
+	}
+	.top-section .main-title p,
+	.top-section .main-title h3 {
+		padding: 0 30px;
+	}
+}
